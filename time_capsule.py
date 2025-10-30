@@ -43,7 +43,7 @@ def load_capsule():
 def is_unlocked(date_str):
     try:
         year = int(date_str.split('-')[0])
-        current_year = 2026  # Update this if needed
+        current_year = 2025  # Update this if needed
         return current_year >= year
     except:
         return False
