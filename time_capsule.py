@@ -3,10 +3,18 @@
 # Your Name - Fall 25-26
 
 def add_message(messages):
-    text = input("Enter your message: ")
-    year = int(input("Unlock year (e.g., 2026): "))
-    month = int(input("Unlock month (1-12): "))
-    day = int(input("Unlock day (1-31): "))
+
+    try:
+     text = input("Enter your message: ")
+     year = int(input("Unlock year (e.g., 2026): "))
+     if year < 2025:
+         print("Unlock year must be more than 2024!")
+         return                        
+     month = int(input("Unlock month (1-12): "))
+     day = int(input("Unlock day (1-31): "))
+    except:
+        print("Invalid input! Please enter valid numbers for year, month, and day.")
+        return
     
     # Format: 2026-12-25|Hello future me!
     message = f"{year}-{month:02d}-{day:02d}|{text}"
