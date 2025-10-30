@@ -3,8 +3,9 @@
 # Your Name - Fall 25-26
 
 def add_message(messages):
-
+    
     try:
+     name = input("Enter your name: ")
      text = input("Enter your message: ")
      year = int(input("Unlock year (e.g., 2026): "))
      if year < 2025:
