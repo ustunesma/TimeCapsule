@@ -2,8 +2,26 @@
 # COE203 Project 1 - Time Capsule
 # Your Name - Fall 25-26
 
+import datetime
+import os
+from datetime import date 
+
+FILE_NAME = "capsule.txt"
+IMAGE_FOLDER = "capsule_images"
+
+# Create image folder if it doesn't exist
+
+if not os.path.exists(IMAGE_FOLDER):
+    os.mkdir(IMAGE_FOLDER)
+
+
+# ---------------- Functions ---------------- #
+
 def add_message(messages):
+  onur.main
     try:
+     name = input("Enter your name: ")
+
      text = input("Enter your message: ")
      year = int(input("Unlock year (e.g., 2026): "))
      if year < 2025:
@@ -41,7 +59,7 @@ def load_capsule():
 def is_unlocked(date_str):
     try:
         year = int(date_str.split('-')[0])
-        current_year = 2026  # Update this if needed
+        current_year = 2025  # Update this if needed
         return current_year >= year
     except:
         return False
