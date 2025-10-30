@@ -1,7 +1,7 @@
 # Time Capsule
 
 ## Features
-- Messages with name and unlock date
+- Messages with name, photos and unlock date
 - Real-time unlock using `datetime.date`
 - Persistent storage
 - Input validation
