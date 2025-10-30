@@ -80,7 +80,9 @@ def view_unlocked(messages):
         print("No messages unlocked yet. Come back later!")
 
 def main():
+    print("--------------------------------")
     print("Welcome to Your Time Capsule!")
+    print("--------------------------------")
     messages = load_capsule()
     
     while True:
