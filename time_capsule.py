@@ -78,20 +78,20 @@ def is_unlocked(date_str):
         return False
 
     def view_unlocked(messages):
-     unlocked = []
-     for msg in messages:
-        parts = msg.split('|', 1)
-        if len(parts) == 2:
-            date_part, full_text = parts
-            if is_unlocked(date_part):
-                unlocked.append(full_text)
-
-    if unlocked:
-        print("\nUnlocked Messages:")
-        for i, msg in enumerate(unlocked, 1):
-            print(f"{i}. {msg}")
-    else:
-        print("No messages unlocked yet. Come back later!")
+        unlocked = []
+        for msg in messages:
+            parts = msg.split('|', 1)
+            if len(parts) == 2:
+                date_part, full_text = parts
+                if is_unlocked(date_part):
+                    unlocked.append(full_text)
+    
+        if unlocked:
+            print("\nUnlocked Messages:")
+            for i, msg in enumerate(unlocked, 1):
+                print(f"{i}. {msg}")
+        else:
+            print("No messages unlocked yet. Come back later!")
 
 def main():
     print("--------------------------------")
