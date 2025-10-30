@@ -18,7 +18,6 @@ if not os.path.exists(IMAGE_FOLDER):
 # ---------------- Functions ---------------- #
 
 def add_message(messages):
-  onur.main
     try:
      name = input("Enter your name: ")
 
