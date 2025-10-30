@@ -2,6 +2,21 @@
 # COE203 Project 1 - Time Capsule
 # Your Name - Fall 25-26
 
+import datetime
+import os
+from datetime import date 
+
+FILE_NAME = "capsule.txt"
+IMAGE_FOLDER = "capsule_images"
+
+# Create image folder if it doesn't exist
+
+if not os.path.exists(IMAGE_FOLDER):
+    os.mkdir(IMAGE_FOLDER)
+
+
+# ---------------- Functions ---------------- #
+
 def add_message(messages):
     
     try:
