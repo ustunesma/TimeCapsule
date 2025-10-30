@@ -35,7 +35,9 @@ def add_message(messages):
     # Format: 2026-12-25|Hello future me!
     message = f"{year}-{month:02d}-{day:02d}|{text}"
     messages.append(message)
+    print("                          ")
     print("Message sealed in capsule!")
+    print("                          ")
     save_capsule(messages)
 
 def save_capsule(messages):
