@@ -18,9 +18,10 @@ if not os.path.exists(IMAGE_FOLDER):
 # ---------------- Functions ---------------- #
 
 def add_message(messages):
-    
+  onur.main
     try:
      name = input("Enter your name: ")
+
      text = input("Enter your message: ")
      year = int(input("Unlock year (e.g., 2026): "))
      if year < 2025:
